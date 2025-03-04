@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('http://localhost:3000/contatos')
+  fetch('URL - api')
     .then((response) => response.json())
     .then((data) => {
       const tabela = document.getElementById('tabela-corpo');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function confirmarExclusao(id) {
   if (confirm('Deseja realmente excluir este contato?')) {
-    fetch(`http://localhost:3000/contatos/${id}`, { method: 'DELETE' })
+    fetch(`URL - api/${id}`, { method: 'DELETE' })
       .then(() => location.reload())
       .catch((error) => console.error('Erro ao excluir contato:', error));
   }
