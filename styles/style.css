@@ -1,0 +1,110 @@
+@charset "utf-8";
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+h1 {
+  color: #66bbff;
+}
+
+.Botao1 {
+  text-decoration: none;
+  background-color: #66bbff;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.Botao1:hover {
+  color: #000;
+}
+
+.Botao2 {
+  text-decoration: none;
+  background-color: #d51213;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.Botao2:hover {
+  color: #000;
+}
+
+.Caixa1 {
+  width: 320px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5px;
+}
+
+.Caixa2 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5px;
+}
+
+#caixa3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ff0000;
+}
+
+#tabela {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+#tabela th {
+  background-color: #66bbff;
+  color: #fff;
+}
+
+#tabela th,
+#tabela td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#tabela th:nth-child(2),
+#tabela td:nth-child(2) {
+  min-width: 200px;
+  max-width: 300px;
+  word-break: break-word;
+}
+
+#tabela th:nth-child(3),
+#tabela td:nth-child(3) {
+  min-width: 120px;
+}
+
+#tabela th:nth-child(4),
+#tabela td:nth-child(4) {
+  min-width: 250px;
+  max-width: 350px;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  #tabela {
+    display: block;
+    overflow-x: auto;
+  }
+}
